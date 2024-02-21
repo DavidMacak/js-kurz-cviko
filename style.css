@@ -39,11 +39,19 @@ button {
   padding: 1rem;
   border: none;
   border-radius: 20px;
+  background-color: #63b4ff;
 }
 
 button:hover {
-  background-color: #63b4ff;
   transition: 0.3s ease;
+  background-color: #c4e2ff;
+}
+
+button:disabled {
+  background-color: #b9f0ff;
+}
+button:disabled:hover {
+  background-color: #ff8282;
 }
 
 hr {
