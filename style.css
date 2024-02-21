@@ -49,3 +49,10 @@ button:hover {
 hr {
   margin: 1rem 0;
 }
+
+.link {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
