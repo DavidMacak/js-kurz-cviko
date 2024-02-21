@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>David Macak</title>
+    <link
+      rel="stylesheet"
+      href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <form
+          action=""
+          class="form">
+          <!----------- CHECKBOXY ----------->
+
+          <h3>Jake kola si chcete pujcit?</h3>
+          <div id="cycle-types">
+            <div class="type-input">
+              <input
+                type="checkbox"
+                name="horske"
+                id="horske" />
+              <label
+                for="horske"
+                id="cycle-label"
+                >horske</label
+              >
+              <input
+                type="number"
+                name="horske"
+                id="horske-num-input"
+                value="0" />
+            </div>
+            <div class="type-input">
+              <input
+                type="checkbox"
+                name="detske"
+                id="detske" />
+              <label
+                for="detske"
+                id="cycle-label"
+                >detske</label
+              >
+              <input
+                type="number"
+                name="detske"
+                id="detske-num-input"
+                value="0" />
+            </div>
+            <div class="type-input">
+              <input
+                type="checkbox"
+                name="silnicni"
+                id="silnicni" />
+              <label
+                for="silnicni"
+                id="cycle-label"
+                >silnicni</label
+              >
+              <input
+                type="number"
+                name="silnicni"
+                id="silnicni-num-input"
+                value="0" />
+            </div>
+            <div class="type-input">
+              <input
+                type="checkbox"
+                name="gravel"
+                id="gravel" />
+              <label
+                for="gravel"
+                id="cycle-label"
+                >gravel</label
+              >
+              <input type="number" name="gravel" id="gravel-num-input"
+              /value="0">
+            </div>
+          </div>
+          <hr />
+          <!----------- SELECT ----------->
+          <label for="duration">Na jak dlouho?</label>
+          <select
+            name="duration"
+            id="duration-select">
+            <option value="1-day">1 den</option>
+            <option value="5-days">5 dnu</option>
+            <option value="2-weeks">2 tydny</option>
+            <option value="month">1 mesic</option>
+          </select>
+          <hr />
+          <!----------- RADIO BUTTONS ----------->
+          <div class="type-input">
+            <input
+              type="radio"
+              name="nosic"
+              id="nosic-1"
+              value="5" />
+            <label for="nosic-1"
+              >cyklonosič střešní (+ 5 procent z celkové ceny zápůjčky
+              navíc)</label
+            >
+          </div>
+          <div class="type-input">
+            <input
+              type="radio"
+              name="nosic"
+              id="nosic-2"
+              value="10" />
+            <label for="nosic-2"
+              >cyklonosič na tažné zařízení (+ 10 procent z celkové ceny
+              zápůjčky navíc)</label
+            >
+          </div>
+          <div class="type-input">
+            <input
+              type="radio"
+              name="nosic"
+              id="nosic-3"
+              value="0"
+              checked />
+            <label for="nosic-3">není třeba cyklonosič</label>
+          </div>
+          <hr />
+          <!----------- VYPOCET CENY ----------->
+          <div class="type-input">
+            <button
+              type="button"
+              onclick="calculate()">
+              Vypocitat cenu
+            </button>
+            <label id="vypocitana-cena">0 Kč</label>
+          </div>
+          <div class="type-input">
+            <input
+              type="number"
+              name="nabidka"
+              id="nabidka-input" />
+          </div>
+          <div class="input-type">
+            <label
+              for="nabidka"
+              id="nabidka"
+              >Nahoru napiste kolik jste ochotni zaplatit.</label
+            >
+          </div>
+          <hr />
+          <!----------- EMAIL ----------->
+          <div class="input-type">
+            <label for="Email:">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email" />
+          </div>
+          <label
+            for="email"
+            id="email-info"
+            hidden
+            >Neplatna adresa</label
+          >
+          <hr />
+          <!----------- SEND BUTTON ----------->
+          <button
+            type="button"
+            id="email-btn"
+            onclick="send()"
+            disabled>
+            Odeslat
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
